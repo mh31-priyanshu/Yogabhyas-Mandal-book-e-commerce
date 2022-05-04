@@ -13,14 +13,22 @@ export default{
                     bookLanguage:"English",
                     bookCover:"Hardcover",
                     bookPrice:"1300",
+                    bookImageURL:"https://picsum.photos/200/300"
+                },
+                {
+                    bookName:"Ikigai - Francesc Miralles",
+                    bookDate:"September 22, 2017",
+                    bookLanguage:"English",
+                    bookCover:"Hardcover",
+                    bookPrice:"418",
                     bookImageURL:"../../assets/images/athousandsplendidsunscover.jpg"
                 },
                 {
-                    bookName:"Ikigai - Khaled Hosseini",
-                    bookDate:"May 22, 2007",
+                    bookName:"Atomic Habits - James Clear",
+                    bookDate:"May 30, 2018",
                     bookLanguage:"English",
-                    bookCover:"Hardcover",
-                    bookPrice:"1300",
+                    bookCover:"Paperback",
+                    bookPrice:"600",
                     bookImageURL:"../../assets/images/athousandsplendidsunscover.jpg"
                 },
                 {
@@ -29,6 +37,46 @@ export default{
                     bookLanguage:"English",
                     bookCover:"Hardcover",
                     bookPrice:"1300",
+                    bookImageURL:"../../assets/images/athousandsplendidsunscover.jpg"
+                },
+                {
+                    bookName:"Ikigai - Francesc Miralles",
+                    bookDate:"September 22, 2017",
+                    bookLanguage:"English",
+                    bookCover:"Hardcover",
+                    bookPrice:"418",
+                    bookImageURL:"../../assets/images/athousandsplendidsunscover.jpg"
+                },
+                {
+                    bookName:"Atomic Habits - James Clear",
+                    bookDate:"May 30, 2018",
+                    bookLanguage:"English",
+                    bookCover:"Paperback",
+                    bookPrice:"600",
+                    bookImageURL:"../../assets/images/athousandsplendidsunscover.jpg"
+                },
+                {
+                    bookName:"A Thousand Splendid Suns - Khaled Hosseini",
+                    bookDate:"May 22, 2007",
+                    bookLanguage:"English",
+                    bookCover:"Hardcover",
+                    bookPrice:"1300",
+                    bookImageURL:"../../assets/images/athousandsplendidsunscover.jpg"
+                },
+                {
+                    bookName:"Ikigai - Francesc Miralles",
+                    bookDate:"September 22, 2017",
+                    bookLanguage:"English",
+                    bookCover:"Hardcover",
+                    bookPrice:"418",
+                    bookImageURL:"../../assets/images/athousandsplendidsunscover.jpg"
+                },
+                {
+                    bookName:"Atomic Habits - James Clear",
+                    bookDate:"May 30, 2018",
+                    bookLanguage:"English",
+                    bookCover:"Paperback",
+                    bookPrice:"600",
                     bookImageURL:"../../assets/images/athousandsplendidsunscover.jpg"
                 }
             ]
@@ -47,14 +95,15 @@ export default{
     <div class="relative" >
         <!-- Header -->
         <div class="">
-            <Header class="fixed w-full top-0" />
+            <Header class="fixed z-10 w-full top-0" />
         </div>
         
         <!-- Filter -->
             <div class="mt-24 absoulute ml-7">
                 <div class="">
-                    <p>Home / Books</p>
-                    <div class="h-96 w-full">
+                    
+                    <div class="fixed h-96 w-full">
+                        <p>Home / Books</p>
                         <Filter />
                     </div>
                 </div>
@@ -67,7 +116,7 @@ export default{
             </div>
             <div class="w-240">
                 <div v-for="item in searchedBooks" :key="item.id">
-                    <ResultBook :bookName="item.bookName" :bookDate="item.bookDate" :bookLanguage="item.bookLanguage" :bookCover="item.bookCover" :bookPrice="item.bookPrice" :bookImageUrl="item.bookImageUrl"/>
+                    <ResultBook :bookName="item.bookName" :bookDate="item.bookDate" :bookLanguage="item.bookLanguage" :bookCover="item.bookCover" :bookPrice="item.bookPrice" :bookImageURL="item.bookImageURL"/>
                 </div>
             </div>
         </div>

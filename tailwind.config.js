@@ -1,5 +1,6 @@
 module.exports = {
   content: [
+    "*",
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
@@ -7,7 +8,8 @@ module.exports = {
     extend: {
       spacing: {
         '130': '37rem',
-        '240': '68rem'
+        '240': '68rem',
+        'px-2': '2px'
       },
       colors: {
         'primary-1': '#FFD2F7',
@@ -18,3 +20,4 @@ module.exports = {
   },
   plugins: [require('@tailwindcss/forms'),],
 }
+
