@@ -99,16 +99,16 @@ export default{
         </div>
         
         <!-- Filter -->
-            <div class="mt-24 absoulute ml-7">
-                <div class="">
-                    
-                    <div class="fixed h-96 w-full">
-                        <p>Home / Books</p>
-                        <Filter />
-                    </div>
+        <div class="mt-24 absoulute ml-7">
+            <div class="">              
+                <div class="fixed h-96 w-full">
+                    <p>Home / Books</p>
+                    <Filter />
                 </div>
             </div>
+        </div>
 
+        <!-- Searched Books -->
         <div class="absolute top-10 left-96">
             <div class="flex items-baseline">
                 <div class="mr-5 font-medium text-lg text-gray-800">Results for</div>
@@ -120,9 +120,6 @@ export default{
                 </div>
             </div>
         </div>
-        
-
-        
     </div>
     
         
